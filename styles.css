@@ -1,0 +1,397 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-image: url('image/Fondo/descarga.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed; / 
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .navbar ul li {
+    margin: 0;
+}
+
+.menu .navbar ul li a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: #dddddd;
+}
+
+.login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #833232;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #772929;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    margin: 20px;
+}
+
+h1, h2 {
+    margin: 0 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#newsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-content {
+    font-size: 1rem;
+}
+
+.news-author {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 1rem;
+}
+
+.media-container {
+    margin-top: 1rem;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.news-video {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#welcomeMessage {
+    font-size: 1.2rem;
+    color: #962b2b;
+    margin-top: 1rem;
+}
+
+#sidebar, #newNewsSidebar {
+    display: none;
+}
+
+.comment-section {
+    margin-top: 1rem;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.comment-form label {
+    margin-bottom: 0.5rem;
+}
+
+.comment-form input, .comment-form textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.comment-form button {
+    align-self: flex-start;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #555;
+}
+
+.comments {
+    margin-top: 1rem;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.publish-button,.cancel-button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#newsForm button {
+    margin-top: 10px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-size: sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #737c94;
+    padding: 40px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-row h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f4f4f4;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+.social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,
+    255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social-links a:hover {
+    background-color: #00C3FF;
+}
+
+@media (max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+}
+
+.close-popup {
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    width: 400%;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100;}
+    45%{margin-left: -100;}
+
+    50%{margin-left: -200;}
+    70%{margin-left: -200;}
+
+    75%{margin-left: -300;}
+    100%{margin-left: -300;}
+}

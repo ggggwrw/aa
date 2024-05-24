@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="imagenes/Logo2.png">
+</head>
+<body>
+
+    <header>
+        <h1>The Gordo News</h1>
+        <div class="header-buttons">
+            <button id="loginButton" class="login-button">Iniciar Sesión</button>
+            <button id="logoutButton" class="logout-button" style="display: none;">Cerrar Sesión</button>
+        </div>
+        <p id="welcomeMessage"></p>
+        <div class="content">
+            <div class="menu container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="images.html">Galeria</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="newsSection">
+            <h2>Post Recientes</h2>
+            <div id="newsContainer"></div>
+        </section>
+        <aside id="sidebar" style="display: none;">
+            <h2>Últimas Noticias</h2>
+            <ul id="latestNews"></ul>
+        </aside>
+        <aside id="newNewsSidebar" style="display: none;">
+            <h2>Nuevas Noticias</h2>
+            <form id="newsForm">
+                <label for="newsTitle">Título:</label>
+                <input type="text" id="newsTitle" name="newsTitle" required>
+                
+                <label for="newsContent">Contenido:</label>
+                <textarea id="newsContent" name="newsContent" required></textarea>
+                
+                <label for="imageURL">URL de la imagen (opcional):</label>
+                <input type="text" id="imageURL" name="imageURL">
+                
+                <label for="videoURL">URL del video (opcional):</label>
+                <input type="text" id="videoURL" name="videoURL">
+                
+                <button type="submit">Publicar</button>
+                <button type="button" id="cancelButton">Cancelar</button>
+            </form>
+        </aside>
+        <button id="newNewsButton" style="display: none;">Crear Nueva Noticia</button>
+    </main>
+    <div id="popup" class="popup" style="display: none;"> 
+        <div class="popup-content">
+            <span id="closePopup" class="close-popup">&times;</span> <!-- Icono de cierre -->
+            <h2>Ingresa tu Nombre</h2>
+            <form id="nameForm">
+                <label for="userName">Nombre:</label>
+                <input type="text" id="userName" name="userName" required>              
+                <button type="submit">Guardar Nombre</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <h4>Estamos mejorando la pagina dia a dia, no dudes en cosultarnos si tienes algun problema</h4>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="Idea.html">Dejanos una idea</a></li>
+                        <li><a href="https://open.spotify.com/playlist/6SgfsZIBATHhqqrtbxcrb2?si=1d7cb853843340d1" target="_blank" title="Escucha buena musica mientras lees">Playlist Spotify</a></li>
+                        <li><a href="https://github.com/users/ggggwrw/projects/2" target="_blank">Git Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
